@@ -91,7 +91,7 @@ fn main() {
         println!("mame hcl : {}", hcl);
         println!("mame ecl : {}", ecl);
         println!("mame pid : {}", pid);
-        println!("valid fields counter : {}", exists_counter);
+        println!("existing fields counter : {}", exists_counter);
 
     }
 
