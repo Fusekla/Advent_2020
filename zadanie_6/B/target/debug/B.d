@@ -1,0 +1,1 @@
+C:\Users\MiroslavGabik\Documents\Rust\Advent_2020\zadanie_6\b\target\debug\B.exe: C:\Users\MiroslavGabik\Documents\Rust\Advent_2020\zadanie_6\b\src\main.rs C:\Users\MiroslavGabik\Documents\Rust\Advent_2020\zadanie_6\b\src\sample.txt

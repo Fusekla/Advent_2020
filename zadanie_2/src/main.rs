@@ -19,7 +19,7 @@ fn main() {
 
         // println!("minimum : {}, maximum : {}, hladane pismenko : {}, heslo : {}", min, max, pismenko, heslo);
 
-        let mut pocet = 0;
+        // let mut pocet = 0;
 
         // for i in heslo.chars() {
         //     // println!("{}", i);
