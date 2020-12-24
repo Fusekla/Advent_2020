@@ -10,10 +10,14 @@ fn spocitaj(vrece: &str, pocet_vrecoch: u64) -> u64 {
     for i in &vstup_txt {
         let members: Vec<_> = i.split(',').collect();
         if members[0] == vrece && members.len() != 1 {
-            println!("prva cast : {}, druha cast : {}", members[1], members[3]);
-            pocet_vrecoch = pocet_vrecoch * (members[1].parse::<u64>().unwrap() + members[3].parse::<u64>().unwrap());
-            println!("Pocet vrecoch : {}", pocet_vrecoch);
-            pocet_vrecoch = pocet_vrecoch + spocitaj(members[2], members[1].parse::<u64>().unwrap());
+            let mut j = 0;
+            if j < members.len()-1 {
+                println!("prva cast : {}, druha cast : {}", members[j+1], members[j+3]);
+                pocet_vrecoch = pocet_vrecoch * (members[j+1].parse::<u64>().unwrap() + members[j+3].parse::<u64>().unwrap());
+                println!("Pocet vrecoch : {}", pocet_vrecoch);
+                pocet_vrecoch = pocet_vrecoch + spocitaj(members[j+2], members[j+1].parse::<u64>().unwrap());
+                j += 2;
+            }
         }
     }
     return pocet_vrecoch
